@@ -1,16 +1,27 @@
 "use client";
 
-import React from "react";
+import React, {FormEvent, useState} from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 import { sendEmail } from "@/actions/sendEmail";
 import SubmitBtn from "./submit-btn";
 import toast from "react-hot-toast";
+import ReCAPTCHA from "react-google-recaptcha";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
+  const [captcha, setCaptcha] = useState<string | null>();
 
+  const onSubmit = (event: FormEvent) => {
+
+    if(!captcha) {
+      event.preventDefault();
+      toast.error("Please verify that you are not a robot");
+      return;
+    }
+  }
+ 
   return (
     <motion.section
       id="contact"
@@ -31,15 +42,8 @@ export default function Contact() {
     >
       <SectionHeading>Contact me</SectionHeading>
 
-      <p className="text-gray-700 -mt-6 dark:text-white/80">
-        Please contact me directly at{" "}
-        <a className="underline" href="mailto:example@gmail.com">
-          iamantt96@gmail.com
-        </a>{" "}
-        or through this form.
-      </p>
-
       <form
+        onSubmit={onSubmit}
         className="mt-10 flex flex-col dark:text-black"
         action={async (formData) => {
           const { data, error } = await sendEmail(formData);
@@ -67,6 +71,8 @@ export default function Contact() {
           required
           maxLength={5000}
         />
+        <ReCAPTCHA sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!} className="mx-auto" onChange={setCaptcha}/>
+        
         <SubmitBtn />
       </form>
     </motion.section>
