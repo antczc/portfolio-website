@@ -9,6 +9,7 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import Typewriter from "typewriter-effect";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -58,7 +59,7 @@ export default function Intro() {
         </div>
       </div>
 
-      <motion.h1 className="mb-10 mt-4 px-4 text-2xl
+      {/* <motion.h1 className="mb-10 mt-4 px-4 text-2xl
       font-medium !leading-[1.5] sm:text-4xl"
       initial={{ opacity: 0, y:100 }}
       animate={{ opacity: 1, y:0 }} 
@@ -67,9 +68,35 @@ export default function Intro() {
         <span className="font-bold">Software Engineer</span> with a major in{" "}
         <span className="font-bold">Computer Science</span>. I enjoy
         building <span className="italic">softwares and developing web applications</span>. 
-        {/* My focus is {"  "}
-        <span className="underline">React (Next.js)</span> */}
+        My focus is {"  "}
+        <span className="underline">React (Next.js)</span>
+      </motion.h1> */}
+
+      <motion.h1 className=" mt-4 px-4 text-4xl
+      font-medium !leading-[1.5] sm:text-4xl"
+      initial={{ opacity: 0, y:100 }}
+      animate={{ opacity: 1, y:0 }} 
+      >
+        <span className="font-bold">Hello, I&apos;m</span> <span className="font-bold text-indigo-600 dark:text-[#ffd700]">Anthony.</span>  
       </motion.h1>
+
+      <h1 className="mb-10 px-4 text-4xl
+      font-bold !leading-[1.5] sm:text-4xl">
+        <Typewriter
+         options={{
+            strings: [
+              "I'm an aspiring Software Engineer",
+              "I enjoy building softwares & web applications",
+              "Let's build something together!",
+            ],
+            autoStart: true,
+            loop: true,
+            delay: 100,
+            deleteSpeed: 50,
+         }}
+         />
+      </h1>
+      
 
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"

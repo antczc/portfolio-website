@@ -27,8 +27,15 @@ export default function About() {
         <span className="font-medium">Computer Science💻</span>.{" "}
         <span className="italic">My favorite part of programming</span> is the
         problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem🧩. My core stack
-        is{" "}
+        feeling of finally figuring out a solution to a problem🧩. 
+    </p>
+
+    &nbsp;
+    &nbsp;
+
+    <p>
+        <span className="font-medium">My core stack
+        is{" "}</span>
         <span className="font-medium">
           Java , C# , C++ , and Python
         </span>
@@ -36,7 +43,11 @@ export default function About() {
         learn new technologies. I am currently looking for a{" "}
         <span className="font-medium">full-time position</span> as a software
         engineer👨‍💻.
+        
     </p>
+
+    &nbsp;
+    &nbsp;
 
     <p>
         <span className="italic">When i am not coding</span>, I enjoy playing
