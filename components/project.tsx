@@ -12,6 +12,7 @@ export default function Project({
   description,
   tags,
   imageUrl,
+  
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -42,11 +43,12 @@ export default function Project({
                 className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
                 key={index}
               >
-                {tag}
+                {tag} 
               </li>
             ))}
           </ul>
         </div>
+
 
         <Image
           src={imageUrl}
