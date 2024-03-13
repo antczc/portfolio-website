@@ -34,28 +34,17 @@ export default function About() {
     &nbsp;
 
     <p>
-        <span className="font-medium">My core stack
-        is{" "}</span>
-        <span className="font-medium">
-          Java , C# , C++ , and Python
-        </span>
-        . I am also familiar with Oracle SQL , MongoDB and Web development. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        engineer👨‍💻.
+
+    A <span className="font-medium">proactive and detail-oriented individual👨‍💻</span> with a keen analytical mind, I excel in the fast-paced tech 
+    industry, particularly in <span className="font-medium">machine learning and software engineering.</span> My robust problem-solving capabilities 
+    are matched by a rapid learning curve and a talent for juggling multiple tasks efficiently. With a <span className="font-medium">strong 
+    foundation in algorithm development and data analysis</span>, I am committed to driving innovation and 
+    delivering solutions that harness the power of technology🌍.
         
     </p>
 
     &nbsp;
     &nbsp;
-
-    <p>
-        <span className="italic">When i am not coding</span>, I enjoy playing
-        video games🎮, watching movies. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">new web technologies🌍</span>
-    </p>
 
   </motion.section>
 

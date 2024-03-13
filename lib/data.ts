@@ -3,6 +3,7 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import shopifyImg from "@/public/shopify.png";
+import ankiImg from "@/public/anki.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 
@@ -38,7 +39,7 @@ export const experiencesData = [
     title: "Diploma in Business Informatics",
     location: "Nanyang Polytechnic, Singapore",
     description:
-      "Studied business informatics, which is a mix of business and IT. I learnt programming, databases, data analytics, business analytics, project management and more.",
+      "I hold a diploma in Business Informatics, a field that seamlessly integrates the realms of business and information technology.",
     icon: React.createElement(LuGraduationCap),
     date: "2020",
   },
@@ -46,7 +47,7 @@ export const experiencesData = [
     title: "Provost Officer",
     location: "Singapore Civil Defence Force",
     description:
-      "Supervise a team of 16 NSF personnel making sure day-to-day operations run smoothly,Carrying out Routine Urine Tests on SCDF personnel for potential drug abuse",
+      "Supervise a team of 16 NSF personnel making sure day-to-day operations run smoothly,Carrying out Routine Urine Tests on SCDF personnel for potential drug abuse.",
     icon: React.createElement(CgWorkAlt),
     date: "2021 - 2023",
   },
@@ -54,27 +55,27 @@ export const experiencesData = [
     title: "Bachelor of Computer Science (Big Data)",
     location: "SIM - University Of Wollongong",
     description:
-      "Enrolled in a bachelor's degree in computer science with a focus on big data.",
+      "Bachelor's Degree in Computer Science, I specialize in Big Data. This focus equips me with the skills to analyze, visualize, and derive insights from extensive datasets, preparing me for the challenges of data-driven decision-making in a tech-centric world.",
     icon: React.createElement(LuGraduationCap),
-    date: "2021 - present",
+    date: "2021 - 2024",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "Website Development for Shopify",
+    title: "Website Development",
     description:
-      "Provided professional and user-friendly web development service in shopify and helped a client set-up website for her cookie business. URL - www.ohmilkymama.com",
-    tags: ["Shopify"],
+      "Provided professional and user-friendly web development service. URL - www.ohmilkymama.com",
+    tags: ["Web Development"],
     imageUrl: shopifyImg,
   },
-  // {
-  //   title: "rmtDev",
-  //   description:
-  //     "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-  //   tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-  //   imageUrl: rmtdevImg,
-  // },
+  {
+    title: "Reading Buddy (Anki Vector)",
+    description:
+      "An interactive game program aimed at enhancing children's reading skills with the use of Anki Vector Robot.",
+    tags: ["Artificial Intelligience", "Machine Learning"],
+    imageUrl: ankiImg ,
+  },
   // {
   //   title: "Word Analytics",
   //   description:
@@ -103,5 +104,8 @@ export const skillsData = [
   "HIVE",
   "Apache Hadoop",
   "Spark",
+  "Machine Learning",
+  "Data Analytics",
+
 
 ] as const;
