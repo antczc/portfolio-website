@@ -57,7 +57,7 @@ export const experiencesData = [
     description:
       "Bachelor's Degree in Computer Science, I specialize in Big Data. This focus equips me with the skills to analyze, visualize, and derive insights from extensive datasets, preparing me for the challenges of data-driven decision-making in a tech-centric world.",
     icon: React.createElement(LuGraduationCap),
-    date: "2021 - 2024",
+    date: "2022 - 2024",
   },
 ] as const;
 
