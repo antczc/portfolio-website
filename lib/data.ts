@@ -4,6 +4,7 @@ import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import shopifyImg from "@/public/shopify.png";
 import ankiImg from "@/public/anki.png";
+import stockImg from "@/public/stockinsights.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 
@@ -62,6 +63,21 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+
+  {
+    title: "StockInsight",
+    description:
+      "UOW Final Year Project - Developed a real-time stock forecasting platform as a Full Stack Engineer, utilizing machine learning models, FastAPI, MongoDB, ReactJS, and TailwindCSS.",
+    tags: ["Machine Learning"],
+    imageUrl: stockImg ,
+  },
+  {
+    title: "Reading Buddy (Anki Vector)",
+    description:
+      "NYP Final Year Project - An interactive game program aimed at enhancing children's reading skills with the use of Anki Vector Robot.",
+    tags: ["Artificial Intelligience", "Machine Learning"],
+    imageUrl: ankiImg ,
+  },
   {
     title: "Website Development",
     description:
@@ -69,13 +85,7 @@ export const projectsData = [
     tags: ["Web Development"],
     imageUrl: shopifyImg,
   },
-  {
-    title: "Reading Buddy (Anki Vector)",
-    description:
-      "An interactive game program aimed at enhancing children's reading skills with the use of Anki Vector Robot.",
-    tags: ["Artificial Intelligience", "Machine Learning"],
-    imageUrl: ankiImg ,
-  },
+  
   // {
   //   title: "Word Analytics",
   //   description:
