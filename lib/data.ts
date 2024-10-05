@@ -65,7 +65,7 @@ export const experiencesData = [
 export const projectsData = [
 
   {
-    title: "StockInsight",
+    title: "Stock Insights",
     description:
       "UOW Final Year Project - Developed a real-time stock forecasting platform as a Full Stack Engineer, utilizing machine learning models, FastAPI, MongoDB, ReactJS, and TailwindCSS.",
     tags: ["Machine Learning"],
