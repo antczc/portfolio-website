@@ -85,7 +85,7 @@ export default function Intro() {
         <Typewriter
          options={{
             strings: [
-              "I'm an aspiring Software Engineer",
+              "I am a Software Engineer",
               "I enjoy building softwares & web applications",
               "Let's build something together!",
             ],
